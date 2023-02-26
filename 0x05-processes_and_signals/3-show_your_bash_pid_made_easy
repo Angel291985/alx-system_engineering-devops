@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# The script displays bash process
+
+pgrep -1 'bash'
