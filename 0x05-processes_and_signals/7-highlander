@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # The script to show a message infinitely and other when sigterm ocurred
 
--term()
+_term()
 {
 	echo 'I am invincible!!!'
 }
