@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+# The script shows the bash process
+# shellcheck disable=SC2009
+
+ps u -eH | egrep 'bash'
