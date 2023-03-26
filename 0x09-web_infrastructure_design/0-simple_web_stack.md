@@ -1,5 +1,5 @@
 # Simple Web Stack
-![Simple web stack](https://app.diagrams.net/#HAngel291985%2Falx-system_engineering-devops%2Fmaster%2F0x09-web_infrastructure_design%2F0-simple_web_stack.png)
+![Simple web stack](https://github.com/Angel291985/alx-system_engineering-devops/blob/master/0x09-web_infrastructure_design/0-simple_web_stack.png)
 
 ## Description
 This is a simple web infrastructure that hosts a website that is reachable via www.foobar.com. There are no firewalls or
