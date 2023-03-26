@@ -39,4 +39,4 @@ Address Mapping record (A Record)--also known as a DNS host record, stores a hos
 > When we need to run some maintenance checks on any componet, they have to be put down or the server has to be turned off. Since there's only one server, the website would be experiencing a downtime.
 >
 > Cannot scale if there's too much incoming traffic.
-> It would be hard to scale this infastructure because one server contains the required components. The server can quicly run out of resources or slow down when it starts receiving a lot of requests.
+> It would be hard to scale this infastructure because one server contains the required components. The server can quickly run out of resources or slow down when it starts receiving a lot of requests.
