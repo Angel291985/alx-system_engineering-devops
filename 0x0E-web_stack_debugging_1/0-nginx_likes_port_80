@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# A bash script with the minimum number of commands to automate the fix on a buggy ubuntu nginx server installation
+
+cd /etc/nginx/sites-enabled/ || exit;
+# Delete the default file
+rm default;
+
+# A symbolic link to the default file in sites-available
+ln -s /etc/nginx/sites-available/default default;
+
+# Restart Nginx
+service nginx restart
