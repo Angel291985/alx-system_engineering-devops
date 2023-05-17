@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+# A bash script that run the whoami command under the user passes as an argument
+
+if [ $# -gt 1 ]
+then 
+  echo "this program accepts only one argument!"
+elif [ $# -lt 1 ]
+then
+  echo "supply the user argument"
+else
+  sudo -u "$1" whoami
+fi
