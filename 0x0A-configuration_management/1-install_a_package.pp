@@ -1,4 +1,4 @@
-# use puppet to install flask from pip3
+# Installs puppet-lint
 
 package { 'puppet-lint':
   ensure   => '2.5.0',
