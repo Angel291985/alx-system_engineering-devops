@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-# bash script of SSH configuration file for the local SSH client
-
-Host *
-      PasswordAuthentication no
-      IdentityFile ~/.ssh/school

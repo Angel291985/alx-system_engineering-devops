@@ -1,1 +1,1 @@
-SSH project
+SSH configuration
