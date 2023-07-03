@@ -1,0 +1,32 @@
+#!/usr/bin/env bash
+# A script that installs and configure HAproxy on the lb-01 server.
+# The load balancer is configured according to the requirements below:
+#+ HAproxy must send traffic to web-01 and web-02
+#+ Distribute requests using a roundrobin algorithm
+#+ HAproxy must be manageable via an init script
+
+# Update packages
+apt-get -y update
+
+# Add HAproxy PPA
+apt-get -y install software-properties-common
+add-apt-repository -y ppa:vbernat/haproxy-2.5
+apt-get -y update
+
+#install HAproxy
+apt-get -y install haproxy
+
+#configure HAproxy
+printf %s "
+frontend http_front
+    bind *:80
+    mode http
+    default_backend http_back
+    
+backend http_back
+    balance roundrobin
+    server web-01 100.25.152.45:80 check
+    server web-02 3.90.83.50:80 check
+" >> /etc/haproxy/haproxy.cfg
+
+service haproxy restart
