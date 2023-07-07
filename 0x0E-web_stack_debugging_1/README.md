@@ -1,1 +1,1 @@
-Web stack debuggibg 1
+Web stack debugging
